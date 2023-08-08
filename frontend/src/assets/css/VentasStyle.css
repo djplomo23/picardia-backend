@@ -1,0 +1,108 @@
+
+.mainContainetVentas{
+    display: grid;
+    grid-template-areas: 
+    "Sright header header" 
+    "Sright  Factura Scontent"
+    "Sright  Factura Scontent " 
+    ;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 10% 80% 10%;
+    background: #c5c5c5;
+    min-height: 100vh;
+    max-height: 100%;
+    min-width: 100%;
+
+}
+
+.headerVentas{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    background: #383838;
+}
+.rightNavVentas{
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: Sright;
+    background: #a0a0a0;
+}
+.MainFacturaVentas{
+    grid-area: Factura;
+    background: #ffffff;
+    border: #c5c5c5 solid 1px ;
+}
+.mainContentVentas{
+    display: flex;
+    min-width: 90%;
+    grid-area: Scontent;
+    background: #ffffff;
+    overflow: scroll;
+    border: #c5c5c5 solid 1px ;
+}
+
+/* productos */
+.productsFactura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    
+  }
+
+.productsFactura li{
+    list-style-type: none;
+    padding: 0 1rem;
+    flex: 0 1 ;
+    margin: 1rem;
+    height: 20rem;
+    background: #ffffff;
+    border: .1rem #c0c0c0c0 solid;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.105);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.105);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.105);
+    transition: transform ease-in .3s;
+  
+  }
+  .productsFactura li:hover{
+    transform: scale(1.060);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.305);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.305);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.305);
+  
+  }
+
+.productFactura{
+
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-height: 38rem;
+  }
+  .product-nameFactura{
+    font-size: 1.5rem; 
+    font-weight: bold;   
+  }
+  .product-brandFactura{
+    font-size: 1.2rem;
+    color: #808080;
+  }
+  .product-priceFactura{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .product-imageFactura{
+    padding-top: .5rem;
+    max-width: 10rem;
+    max-height: 10rem;
+  }

@@ -1,0 +1,64 @@
+.mainContainetLayout{
+    display: grid;
+    min-height: 100vh;
+    min-width: 100%;
+    grid-template-areas: 
+    "Sright header Sleft" 
+    "Sright Scontent Sleft "
+    "Sright footer Sleft" 
+    ;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 10% 80% auto;
+    background: #cfcfcf;
+  }
+  .headerLayout{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #cfcfcf;
+  }
+  .leftNavLayout{
+    grid-area: Sleft;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+  }
+  .rightNavLayout{
+    grid-area: Sright;
+    display: grid;
+    justify-content: center;
+    width: 30%;
+    height: 70%;
+    margin: auto ;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  .mainContentLayout{
+    grid-area: Scontent;
+    grid-column: 2/3;
+    background: rgb(255, 255, 255);
+    width: auto;  
+    margin-right: 2rem;
+
+    margin-top: 60px;
+    height: 60vh;
+    overflow-y: scroll;
+  }
+  .footerLayout{
+    grid-area: footer;
+  }
+  .headerLayout h3{
+    color: #000000;
+  }
+  
+  
+  .formOffers{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .rihtSideArrow{
+    color: tomato;
+  }
