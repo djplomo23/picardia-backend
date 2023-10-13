@@ -45,6 +45,9 @@
     "dev": "nodemon --watch backend --exec babel-node backend/server.js",
     "start": "node backend/server.js"
   },
+   "config": {
+    "production": false
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
